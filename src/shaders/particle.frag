@@ -17,7 +17,7 @@ void main() {
 
 	// greyscale
 	float grey = colA.r * 0.21 + colA.g * 0.71 + colA.b * 0.07;
-	vec4 colB = vec4(grey, grey, grey, 1.0);
+	vec4 colB = vec4(grey + colA.r * 0.1, grey + colA.g * 0.1, grey + colA.b * 0.1, 1.0);
 
 	// circle
 	float border = 0.3;
